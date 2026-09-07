@@ -69,7 +69,7 @@ const Skills = () => {
         {tools.map((tool, index) => (
           <div
             key={index}
-            className="px-6 py-3 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            className="px-6 py-3 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:bg-indigo-100 dark:hover:bg-indigo-900/50 hover:shadow-lg transition-shadow"
           >
             <span className="font-medium">{tool}</span>
           </div>
