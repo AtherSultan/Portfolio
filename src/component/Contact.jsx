@@ -52,7 +52,7 @@ const Contact = () => {
               Contact Information
             </h3>
 
-            <p className="text-black dark:text-gray-300 mb-15 leading-relaxed">
+           <p className="text-black dark:text-black">
               Have a project in mind or want to discuss potential opportunities?
               Feel free to reach out using the contact information below or the
               contact form.
@@ -68,7 +68,8 @@ const Contact = () => {
 
                 <div>
                   <h4 className="font-bold text-lg mb-1">Email</h4>
-                  <p className="text-black dark:text-gray-400 break-all">
+           <p className="text-black dark:text-black">
+
                     Athersultan789@gmail.com
                   </p>
                 </div>
@@ -81,7 +82,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-lg mb-2 text-black">Phone</h4>
+                   <h4 className="font-bold text-lg mb-1">Phone</h4>
 
                   <a
                     href="https://wa.me/03344390612"
@@ -102,7 +103,7 @@ const Contact = () => {
 
                 <div>
                   <h4 className="font-bold text-lg mb-1">Location</h4>
-                  <p className="text-blue-700 dark:text-gray-400">
+                  <p className="text-black dark:text-black">
                     Lahore, Pakistan
                   </p>
                 </div>
@@ -119,7 +120,7 @@ const Contact = () => {
                   <a
                     key={platform}
                     href="#"
-                    className="bg-gray-100 dark:bg-gray-700 px-4 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                    className="bg-gray-100 dark:bg-gray-700 px-4 py-2.5 rounded-lg text-gray-700 dark:text-white hover:bg-indigo-100 dark:hover:bg-indigo-900/50 hover:text-blue-700 dark:hover:text-blue-700 transition-colors"
                   >
                     {platform}
                   </a>
