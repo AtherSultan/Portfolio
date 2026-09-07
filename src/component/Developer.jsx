@@ -1,8 +1,10 @@
 import React from "react";
 import {
   FaGithub, FaLinkedin, FaFacebookF,
-  FaInstagram, FaTiktok, FaYoutube
+  FaInstagram, FaTiktok, FaYoutube, 
 } from "react-icons/fa";
+import { RiVercelFill } from "react-icons/ri";
+
 import yourpic from "../picandvideo/ather_sultan.jpg";
 import Work from "../picandvideo/ourateam.jpg"
 import Logo from "../picandvideo/logo.png"
@@ -60,21 +62,27 @@ const Developer = () => {
           {/* Social Icons */}
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="#"
+              href="https://github.com/AtherSultan"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
             >
               <FaGithub size={20} />
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/athersultan/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
             >
               <FaLinkedin size={20} />
             </a>
 
             <a
-              href="#"
+              href="https://www.facebook.com/athersultan"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
             >
               <FaFacebookF size={20} />
@@ -100,6 +108,16 @@ const Developer = () => {
             >
               <FaYoutube size={20} />
             </a>
+            <a
+              href="https://vercel.com/athersultan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            >
+              
+              <RiVercelFill size={20} />
+            </a>
+
           </div>
         </div>
 

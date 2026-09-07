@@ -52,7 +52,7 @@ const Contact = () => {
               Contact Information
             </h3>
 
-            <p className="text-gray-700 dark:text-gray-300 mb-15 leading-relaxed">
+            <p className="text-black dark:text-gray-300 mb-15 leading-relaxed">
               Have a project in mind or want to discuss potential opportunities?
               Feel free to reach out using the contact information below or the
               contact form.
@@ -68,7 +68,7 @@ const Contact = () => {
 
                 <div>
                   <h4 className="font-bold text-lg mb-1">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-400 break-all">
+                  <p className="text-black dark:text-gray-400 break-all">
                     Athersultan789@gmail.com
                   </p>
                 </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Phone</h4>
+                  <h4 className="font-bold text-lg mb-2 text-black">Phone</h4>
 
                   <a
                     href="https://wa.me/03344390612"
@@ -102,7 +102,7 @@ const Contact = () => {
 
                 <div>
                   <h4 className="font-bold text-lg mb-1">Location</h4>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-black dark:text-gray-400">
                     Lahore, Pakistan
                   </p>
                 </div>
@@ -132,7 +132,7 @@ const Contact = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 md:p-7">
 
-              <h3 className="text-2xl font-bold mb-5">
+              <h3 className="text-2xl font-bold mb-5 text-blue-700">
                 Send Me a Message
               </h3>
 

@@ -23,7 +23,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-20 bg-gray-100 dark:bg-gray-800">
-  <div className="container mx-auto px-4 text-blue-700">
+  <div className="container mx-auto px-4 text-gray-500">
 
     {/* Heading */}
     <div className="text-center mb-16">
