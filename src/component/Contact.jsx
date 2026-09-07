@@ -96,13 +96,13 @@ const Contact = () => {
 
               {/* Location */}
               <div className="flex items-start">
-                <div className="text-indigo-600 dark:text-indigo-400 mt-1 mr-4">
+                <div className="text-indigo-600 text-blue-700 dark:text-indigo-400 mt-1 mr-4">
                   <FaMapMarkerAlt size={23} />
                 </div>
 
                 <div>
                   <h4 className="font-bold text-lg mb-1">Location</h4>
-                  <p className="text-black dark:text-gray-400">
+                  <p className="text-blue-700 dark:text-gray-400">
                     Lahore, Pakistan
                   </p>
                 </div>
