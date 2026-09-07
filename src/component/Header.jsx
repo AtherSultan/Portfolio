@@ -23,22 +23,23 @@ const Header = ({ darkMode, toggleDarkMode, activeSection }) => {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      {/* <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+       */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
         <div className="text-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-         My Portfolio
+          My Portfolio
         </div>
-        
+
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
             {navItems.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className={`font-medium transition-colors hover:text-indigo-600 dark:hover:text-indigo-400 ${
-                    activeSection === item.id 
-                      ? 'text-indigo-600 dark:text-indigo-400 font-semibold' 
+                  className={`font-medium transition-colors hover:text-indigo-600 dark:hover:text-indigo-400 ${activeSection === item.id
+                      ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
                       : 'text-gray-700 dark:text-gray-300'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
@@ -46,7 +47,7 @@ const Header = ({ darkMode, toggleDarkMode, activeSection }) => {
             ))}
           </ul>
         </nav>
-        
+
         <div className="flex items-center space-x-4">
           <button
             onClick={toggleDarkMode}
@@ -55,7 +56,7 @@ const Header = ({ darkMode, toggleDarkMode, activeSection }) => {
           >
             {darkMode ? <FaSun /> : <FaMoon />}
           </button>
-          
+
           <button className="md:hidden p-2 rounded-md bg-gray-200 dark:bg-gray-700">
             <div className="w-5 h-0.5 bg-gray-700 dark:bg-gray-300 mb-1"></div>
             <div className="w-5 h-0.5 bg-gray-700 dark:bg-gray-300 mb-1"></div>

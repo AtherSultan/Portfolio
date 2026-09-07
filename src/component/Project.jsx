@@ -6,7 +6,6 @@ import Portfolio from "../picandvideo/portfolio2.jpeg";
 import E_Dashbord from "../picandvideo/Ecommerce_dash.png";
 
 import Financia from "../picandvideo/Financial_Overview.png";
-// import E-commrce from "../picandvideo/Financial_Overview.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -45,7 +44,7 @@ const Projects = () => {
       description:
         "Financial analytics dashboard with interactive charts and data visualization.",
       tags: ["React", "D3.js", "Tailwind CSS"],
-      image:Financia
+      image: Financia
     },
     {
       id: 5,
@@ -63,7 +62,7 @@ const Projects = () => {
       description:
         "Modern portfolio template built with React and Tailwind CSS for designers and developers.",
       tags: ["React", "Tailwind CSS", "Responsive"],
-      image:Portfolio
+      image: Portfolio
     },
     {
       id: 7,
@@ -72,7 +71,7 @@ const Projects = () => {
       description:
         "Modern portfolio template built with React and Tailwind CSS for designers and developers.",
       tags: ["Data entry", "Create Report", "Work on one sheet"],
-      image:Portfolio
+      image: Portfolio
     },
     {
       id: 8,
@@ -81,7 +80,7 @@ const Projects = () => {
       description:
         "Create grocery list with React and Tailwind CSS for designers and developers.",
       tags: ["Create Report", "Work on one sheet"],
-      image:Portfolio
+      image: Portfolio
     },
 
 
@@ -93,22 +92,26 @@ const Projects = () => {
       : projects.filter((project) => project.category === activeFilter);
 
   return (
+
     <section id="projects" className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+      <div className="max-w-6xl mx-auto px-4">
+
+        {/* Heading */}
+        <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">My Projects</h2>
+
           <div className="w-20 h-1 bg-indigo-600 mx-auto mb-8"></div>
 
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {["all", "web", "mobile","Ms Excel",].map((filter) => (
+          {/* Filters */}
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            {["all", "web", "mobile", "Ms Excel"].map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors ${
-                  activeFilter === filter
+                className={`px-5 py-2 rounded-full font-medium text-sm transition-colors ${activeFilter === filter
                     ? "bg-indigo-600 text-white"
                     : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
-                }`}
+                  }`}
               >
                 {filter.charAt(0).toUpperCase() + filter.slice(1)}
               </button>
@@ -116,45 +119,56 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="w-full max-w-sm bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="h-48 bg-gray-200 border-2 border-dashed w-full">
+              {/* Image */}
+              <div className="h-40 bg-gray-200 border-2 border-dashed w-full">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-48 w-full object-cover"
+                  className="h-40 w-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold">{project.title}</h3>
-                  <div className="flex space-x-2">
+
+              {/* Content */}
+              <div className="p-4">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-lg font-bold pr-2">
+                    {project.title}
+                  </h3>
+
+                  <div className="flex space-x-2 shrink-0">
                     <a
                       href="#"
                       className="text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400"
                     >
-                      <FaGithub />
+                      <FaGithub size={16} />
                     </a>
+
                     <a
                       href="#"
                       className="text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400"
                     >
-                      <FaExternalLinkAlt />
+                      <FaExternalLinkAlt size={16} />
                     </a>
                   </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
                   {project.description}
                 </p>
+
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-300 text-sm rounded-full"
+                      className="px-2.5 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-300 text-xs rounded-full"
                     >
                       {tag}
                     </span>
@@ -164,6 +178,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
