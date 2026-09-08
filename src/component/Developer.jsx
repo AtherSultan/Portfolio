@@ -36,7 +36,7 @@ const Developer = () => {
             Creating Beautiful Digital Experiences
           </h2>
 
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-lg leading-relaxed">
+          <p className="text-lg text-black dark:text-black mb-8 max-w-lg leading-relaxed">
             I craft responsive websites where technology meets creativity. With
             a focus on user experience and modern design principles, I build
             digital products that people love to use.
