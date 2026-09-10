@@ -18,7 +18,8 @@ const Projects = () => {
       description:
         "A comprehensive admin dashboard for e-commerce platforms with analytics and inventory management.",
       tags: ["React", "Tailwind CSS", "Redux"],
-      image: E_Dashbord
+      image: E_Dashbord,
+      link: "https://myticket-ten.vercel.app/"
     },
     // {
     //   id: 2,
@@ -29,59 +30,59 @@ const Projects = () => {
     //     // 'Figma',
     //      'UI Design', 'Prototype']
     // },
-    {
-      id: 3,
-      title: "Travel Booking Platform",
-      category: "web",
-      description: "frontend developer travel booking website with search,.",
-      tags: ["React", "Tailwindcss", "js"],
-      image: Travel,
-    },
-    {
-      id: 4,
-      title: "Finance Dashboard",
-      category: "web",
-      description:
-        "Financial analytics dashboard with interactive charts and data visualization.",
-      tags: ["React", "D3.js", "Tailwind CSS"],
-      image: Financia
-    },
-    {
-      id: 5,
-      title: "Hotel Booking",
-      category: "mobile",
-      description:
-        "Discovering local Hotel with reviews and reservations.",
-      tags: ["User Research", "Prototyping"],
-      image: Hotel,
-    },
-    {
-      id: 6,
-      title: "Portfolio Template",
-      category: "web",
-      description:
-        "Modern portfolio template built with React and Tailwind CSS for designers and developers.",
-      tags: ["React", "Tailwind CSS", "Responsive"],
-      image: Portfolio
-    },
-    {
-      id: 7,
-      title: "Excel Project",
-      category: "Ms Excel",
-      description:
-        "Modern portfolio template built with React and Tailwind CSS for designers and developers.",
-      tags: ["Data entry", "Create Report", "Work on one sheet"],
-      image: Portfolio
-    },
-    {
-      id: 8,
-      title: "Grocery list",
-      category: "Food search",
-      description:
-        "Create grocery list with React and Tailwind CSS for designers and developers.",
-      tags: ["Create Report", "Work on one sheet"],
-      image: Portfolio
-    },
+    // {
+    //   id: 3,
+    //   title: "Travel Booking Platform",
+    //   category: "web",
+    //   description: "frontend developer travel booking website with search,.",
+    //   tags: ["React", "Tailwindcss", "js"],
+    //   image: Travel,
+    // },
+    // {
+    //   id: 4,
+    //   title: "Finance Dashboard",
+    //   category: "web",
+    //   description:
+    //     "Financial analytics dashboard with interactive charts and data visualization.",
+    //   tags: ["React", "D3.js", "Tailwind CSS"],
+    //   image: Financia
+    // },
+    // {
+    //   id: 5,
+    //   title: "Hotel Booking",
+    //   category: "mobile",
+    //   description:
+    //     "Discovering local Hotel with reviews and reservations.",
+    //   tags: ["User Research", "Prototyping"],
+    //   image: Hotel,
+    // },
+    // {
+    //   id: 6,
+    //   title: "Portfolio Template",
+    //   category: "web",
+    //   description:
+    //     "Modern portfolio template built with React and Tailwind CSS for designers and developers.",
+    //   tags: ["React", "Tailwind CSS", "Responsive"],
+    //   image: Portfolio
+    // },
+    // {
+    //   id: 7,
+    //   title: "Excel Project",
+    //   category: "Ms Excel",
+    //   description:
+    //     "Modern portfolio template built with React and Tailwind CSS for designers and developers.",
+    //   tags: ["Data entry", "Create Report", "Work on one sheet"],
+    //   image: Portfolio
+    // },
+    // {
+    //   id: 8,
+    //   title: "Grocery list",
+    //   category: "Food search",
+    //   description:
+    //     "Create grocery list with React and Tailwind CSS for designers and developers.",
+    //   tags: ["Create Report", "Work on one sheet"],
+    //   image: Portfolio
+    // },
 
 
   ];
@@ -109,8 +110,8 @@ const Projects = () => {
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
                 className={`px-5 py-2 rounded-full font-medium text-sm transition-colors ${activeFilter === filter
-                    ? "bg-indigo-600 text-white"
-                    : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
+                  ? "bg-indigo-600 text-white"
+                  : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
                   }`}
               >
                 {filter.charAt(0).toUpperCase() + filter.slice(1)}
@@ -149,13 +150,20 @@ const Projects = () => {
                     >
                       <FaGithub size={16} />
                     </a>
-
                     <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+                    >
+                      Air ticket
+                    </a>
+                    {/* <a
                       href="#"
                       className="text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400"
                     >
                       <FaExternalLinkAlt size={16} />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
 
